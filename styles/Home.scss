@@ -1,0 +1,79 @@
+.separator-line {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(140, 82, 255, 0.3); // Borde luminoso en tarjetas
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 25px rgba(140, 82, 255, 0.6); // Ilumina solo al pasar el mouse
+    }
+}
+
+.profile-card {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none; // Sin borde luminoso en perfiles
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+
+    .profile-image {
+        border-radius: 50%;
+        display: block;
+    }
+
+    .led-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(140, 82, 255, 0.6), 0 0 30px rgba(140, 82, 255, 0.4);
+        pointer-events: none;
+    }
+}
+
+.profile-name {
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.profile-socials {
+    margin-top: 1rem;
+
+    a {
+        color: #cb6ce6;
+        margin: 0 0.5rem;
+        font-size: 1.5rem; // Cambia esto si necesitas un tamaño diferente
+    }
+}
+
+.profile-experience {
+    color: white;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+svg {
+    height: 1.25rem;
+    width: auto;
+}
+.border{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
