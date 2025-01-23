@@ -1,0 +1,83 @@
+@import "~bulma/bulma";
+
+$color-primary: #8c52ff;   // Color primario
+$color-secondary: #cb6ce6; // Color secundario
+$color-background: #080808; // Color de fondo
+$color-text: white;        // Color de texto  
+
+
+:root {
+    --bulma-primary-h: 260deg;
+    --bulma-primary-l: 66%;
+  }
+  
+  
+// Estilos globales
+body {
+    background-color: $color-background;
+    color: $color-text;
+    font-family: Arial, sans-serif; // Puedes cambiar la fuente si lo deseas
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-primary; // Color para encabezados
+}
+
+a {
+    color: $color-secondary; // Color para enlaces
+    text-decoration: none;   // Sin subrayado
+    &:hover {
+        text-decoration: none; // Subrayado en hover
+    }
+}
+@keyframes scale-up { //hacer grande un objeto
+    to {scale: 1.5;}
+}
+
+@keyframes fade-away {   //hacer invicible un objeto
+    to {opacity: 0; }
+}
+.animacion {
+    view-timeline: --scroll;
+}
+.animacion:first-child {
+    animation: fade-away both linear;    
+    animation-timeline: --scroll;
+    animation-range: exit 20% exit 90%;
+}
+.animacion:last-child {
+    animation:
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range:
+        exit 0% exit 100%,
+        exit 50% exit 90%;
+}
+article {
+    height: 42px;
+    overflow: hidden;
+    transition: height 0.5s;
+    interpolate-size: allow-keywords;
+}
+
+article:hover {
+    height: auto;
+}
+.hscard{
+    aspect-ratio: 7/3;
+}
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; //centra el div
+    align-items: center; // centra el contenido del div   
+}
+iframe {
+    width: 1250px;
+    aspect-ratio: 16/9;
+    height: auto;
+    justify-content: center;
+}

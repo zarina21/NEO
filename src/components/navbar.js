@@ -1,9 +1,9 @@
-'use client'; // Asegura que el componente es un Client Component
+'use client'; // Ensures that the component is a Client Component
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import 'bulma/css/bulma.min.css'; // Importa Bulma
-import '/styles/Navbar.scss'
+import 'bulma/css/bulma.min.css'; // Import Bulma
+import '/src/styles/Navbar.scss'
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -14,13 +14,15 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-fixed-top c" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
-                    <img 
-                        src="/N va.png" 
+                    <Image 
+                        src="/image/N_va.png" 
                         alt="logo" 
-                        style={{ width: '160px', height: 'auto' }} // Establece el ancho y ajusta la altura automáticamente
+                        width={160}
+                        height={160} // Sets the width and adjusts the height automatically
+                        style={{ objectFit: 'contain' }} // Maintains the aspect ratio without distorting the image
                     />
                 </a>
                 <div 
@@ -38,7 +40,7 @@ const Navbar = () => {
                     <a className={`navbar-item ${pathname === '/' ? 'is-selected' : ''}`} href="/"> Home </a>
                     <a className={`navbar-item ${pathname === '/portfolio' ? 'is-selected' : ''}`} href="/portfolio"> Portfolio </a>
                     <a className={`navbar-item ${pathname === '/about' ? 'is-selected' : ''}`} href="/about"> About Us </a>
-                    <a className={`navbar-item ${pathname === '/packages' ? 'is-selected' : ''}`} href="/packages"> Paquetes </a>
+                    <a className={`navbar-item ${pathname === '/packages' ? 'is-selected' : ''}`} href="/Products"> Products </a>
                     <a className={`navbar-item ${pathname === '/contact' ? 'is-selected' : ''}`} href="/contact"> Contact </a>
                 </div>
             </div>
