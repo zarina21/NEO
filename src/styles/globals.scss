@@ -2,16 +2,19 @@
 
 $color-primary: #8c52ff;   // Color primario
 $color-secondary: #cb6ce6; // Color secundario
-$color-background: #080808; // Color de fondo
+$color-background: #080808;// Color de fondo
 $color-text: white;        // Color de texto  
 
+.rosa {
+    color: $color-secondary;
+}
 
 :root {
     --bulma-primary-h: 260deg;
     --bulma-primary-l: 66%;
   }
   
-  
+
 // Estilos globales
 body {
     background-color: $color-background;
