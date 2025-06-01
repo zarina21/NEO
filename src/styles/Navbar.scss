@@ -8,7 +8,7 @@ $selected-color: #cb6ce6; // Color secundario para resaltar
 
 .navbar {
   background-color: #080808; // Color de fondo
-  z-index: 1000; // Mantener el navbar por encima de otros elementos
+ 
 
   .navbar-item {
     color: $selected-color; // Color de texto
