@@ -4,17 +4,10 @@
 #
 
 app = "neo-pfxj8a"
-primary_region = "lax"
-
-[http_service]
-auto_start_machines = true
-auto_stop_machines = true
-force_https = true
-internal_port = 3_000
-min_machines_running = 0
-processes = [ "app" ]
+primary_region = "lax"  # Cambié la región a LAX
 
 [build]
+  dockerfile = "Dockerfile"  # Esto usa tu Dockerfile para construir la app
 
 [http_service]
   internal_port = 3000
@@ -24,7 +17,7 @@ processes = [ "app" ]
   min_machines_running = 0
   processes = ["app"]
 
-[vm]
+[[vm]]
   memory = "1gb"
   cpu_kind = "shared"
   cpus = 1
