@@ -1,5 +1,5 @@
 // styles/Navbar.scss
-
+@import '@/styles/navbar.scss';
 @import "~bulma/bulma"; // Importa Bulma
 
 // Define tus colores
@@ -48,3 +48,7 @@ $selected-color: #cb6ce6; // Color secundario para resaltar
     }
   }
 }
+
+
+
+
