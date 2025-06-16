@@ -1,4 +1,4 @@
-import '@/styles/Home.scss';
+import '@/styles/home.scss';
 import Intro from '/src/components/cosas/section/intro/intro.js';
 import TextBox from '/src/components/cosas/section/cuadrosInfo/textBox.js';
 import WebInfo from '/src/components/cosas/section/WebInfo/webinfo.js';

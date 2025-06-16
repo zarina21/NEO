@@ -1,5 +1,5 @@
 import Info from "./info";
-import DataInfo from "./DataInfo"; // Make sure to import DataInfo
+import DataInfo from "./dataInfo"; // Make sure to import DataInfo
 
 const WebInfo = () => {
     return(

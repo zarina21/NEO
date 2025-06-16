@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import 'bulma/css/bulma.min.css'; // Import Bulma
-import '/src/styles/Navbar.scss'
+import '@/styles/navbar.scss'; // Import custom styles for the navbar
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
                     <Image 
-                        src="/image/N_va.png" 
+                        src="/image/n_va.png" 
                         alt="logo" 
                         width={160}
                         height={160} // Sets the width and adjusts the height automatically
