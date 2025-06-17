@@ -1,8 +1,10 @@
 import '@/styles/home.scss';
-import Intro from '/src/components/cosas/section/intro/intro.js';
-import TextBox from '/src/components/cosas/section/cuadrosInfo/textBox.js';
-import WebInfo from '/src/components/cosas/section/WebInfo/webinfo.js';
-import Miniatura from '/src/components/cosas/section/portafolio/miniatura.js';
+import WebInfo from '@/components/cosas/section/webInfo/webinfo';
+import Intro from '@/components/cosas/section/intro/intro';
+import TextBox from '@/components/cosas/section/cuadrosInfo/textBox';
+import Miniatura from '@/components/cosas/section/portafolio/miniatura';
+
+
 
 const Home = () => {
     return (
